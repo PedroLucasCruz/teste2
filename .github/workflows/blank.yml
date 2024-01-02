@@ -12,7 +12,7 @@ on:
 jobs:
    teste_job:
     name: Executando job de teste 
-    runs-on:  ubuntu-latest #Definição do runner aqui, aqui pega a ultima versão do ubuntu, 
+    runs-on:  self-hosted #Definição do runner aqui, aqui pega a ultima versão do ubuntu, 
     steps:  #os steps são os passos parar execução do workflow, é dentro do steps que é aninhado os stesp para executar
     - name: Checkout code #Definição do nome da primeira step
       uses: actions/checkout@v2 #Uses é uma diretiva que faz parte da steps, Nesta linha está sendo feito com a action checkou o checkout para baixar os arquivos, neste caso é usado a versão 2 pode ser vista em @V2
